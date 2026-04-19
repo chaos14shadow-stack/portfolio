@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <p class="top-title">PORTFOLIO · BS INFORMATION TECHNOLOGY</p>
+
+        <img src="ywo.jpg" alt="Profile" class="profile-img">
+
+        <h1>Myles T.<span>Dela Cruz</span></h1>
+        <p class="headline">BS Information Technology Student</p>
+<label class="switch">
+    <span class="switch-text">Change Theme</span>
+    <input type="checkbox" id="themeToggle">
+    <span class="slider"></span>
+</label>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+       >Hello! I'm Myles Dela Cruz, a passionate BS Information Technology student. 
+        I have a strong interest in web development, programming, and technology.
+        I enjoy learning new skills and applying them to create innovative solutions.
+        In my free time, I like to explore new technologies and work on personal projects to enhance my skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills">
+        <div class="skill" onclick="showSkill('Proficiency: Intermediate')">HTML</div>
+        <div class="skill" onclick="showSkill('Proficiency: Intermediate')">CSS</div>
+        <div class="skill" onclick="showSkill('Proficiency: Average')">Java</div>
+        <div class="skill" onclick="showSkill('Proficiency: Basic')">JavaScript</div>
+    </div>
+
+    <p id="skillInfo"></p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <span class="project-number">01</span>
+            <h3>Musaca – Music Streaming Platform</h3>
+            <p>
+                A simple web-based music streaming platform created as a school project.
+                It includes playlist layout, basic media controls, and responsive design.
+            </p>
+            <div class="tags">
+                <span>C#</span>
+                <span>MS ACCESS</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <span class="project-number">02</span>
+            <h3>TambayTunes – Music Streaming Platform</h3>
+            <p>
+               A student-made music streaming interface developed for School Prodject.
+               It includes a playlist layout, simple music controls design, and responsive structure. 
+               This project helped me and my group mates improve our front-end and database integration skills.
+            </p>
+            <div class="tags">
+                <span>C#</span>
+                <span>MYSQL</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+            <span class="project-number">03</span>
+            <h3>CPC: Campus Escape – Maze Game</h3>
+            <p>
+              A basic maze game created as a school activity. 
+              The game includes simple player movement, level progression, and basic mechanics. 
+              This helped me and my partner understand logic building and game flow in programming.
+            </p>
+            <div class="tags">
+                <span>C#</span>
+                <span>TEXT FILE</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="Enter email"
+            autocomplete="email"
+        >
+
+        <textarea 
+            id="message" 
+            name="message"
+            placeholder="Message"
+            autocomplete="off"
+        ></textarea>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="formMsg"></p>
+</section>
+<footer>
+    <div class="socials">
+        <a href="https://facebook.com/Myles Dela Cruz" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            <img src="pis.png" alt="Facebook" class="social-icon">
+        </a>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emailmylesdelacruz21@gmail.com" target="_blank">
+            <i class="fab fa-google"></i>
+            <img src="google.png" alt="Google" class="social-icon">
+        </a>
+
+        <a href="https://instagram.com/opasdfbyeol" target="_blank">
+            <i class="fab fa-instagram"></i>
+            <img src="insta.jpg" alt="Instagram" class="social-icon">
+        </a>
+
+        <a href="https://x.com/Myless DelaCruz" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+            <img src="icon.png" alt="X" class="social-icon">
+        </a>
+    </div>
+
+    <p>Email: mylesdelacruz21@gmail.com</p>
+    <p>© 2026 Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
